@@ -1,14 +1,14 @@
 let display = '';
 
 function inputValue(value) {
-  const displayElement = document.querySelector("input[type='text']");
+  const displayElement = document.querySelector('input');
   display += value;
   displayElement.value = display;
 }
 
 function calculate() {
   try {
-    const displayElement = document.querySelector("input[type='text']");
+    const displayElement = document.querySelector('input');
     display = eval(display).toString();
     displayElement.value = display;
   } catch (error) {
@@ -18,11 +18,11 @@ function calculate() {
 
 function clearResult() {
   display = '';
-  document.querySelector("input[type='text']").value = '';
+  document.querySelector('input').value = '';
 }
 
 function deleteLast() {
-  const displayElement = document.querySelector("input[type='text']");
+  const displayElement = document.querySelector('input');
   display = display.slice(0, -1);
   displayElement.value = display;
 }
