@@ -1,11 +1,9 @@
 body {
-  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 700px;
   background-color: #000000;
-  margin: 0;
 }
 
 .calculator {
@@ -13,7 +11,6 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 table {
@@ -45,18 +42,14 @@ button {
   border-radius: 4px;
   background-color: #00d5ff;
   cursor: pointer;
-  transition: background-color 0.2s;
 }
 
-button:hover {
-  background-color: #00abfb;
-}
-
-.equals-btn {
-  background-color: #45a049;
+.delete {
+  background-color: rgb(255, 112, 112);
   color: #fff;
 }
 
-.equals-btn:hover {
-  background-color: #03b043;
+.equal {
+  background-color: #45a049;
+  color: #fff;
 }
